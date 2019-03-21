@@ -25,11 +25,41 @@ import uk.ac.bris.cs.gamekit.graph.Graph;
 
 // TODO implement all methods and pass all tests
 public class ScotlandYardModel implements ScotlandYardGame {
-
+	List<Boolean> rounds;
+	Graph<Integer, Transport> graph;
+	PlayerConfiguration mrX;
+	PlayerConfiguration firstDetective;
+	PlayerConfiguration restOfTheDetectives;
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
 			PlayerConfiguration mrX, PlayerConfiguration firstDetective,
 			PlayerConfiguration... restOfTheDetectives) {
 		// TODO
+		this.rounds = requireNonNull(rounds);
+		this.graph = requireNonNull(graph);
+		if (rounds.isEmpty()) {
+			throw new IllegalArgumentException("Empty rounds");
+		}
+		if(graph.isEmpty()) {
+			throw new IllegalArgumentException("Empty graph");
+		}
+		if (mrX.colour != BLACK) { // or mr.colour.isDetective()
+			throw new IllegalArgumentException("MrX should be Black");
+		}
+		ArrayList<PlayerConfiguration> configurations = new ArrayList<>();
+		for (PlayerConfiguration configuration : restOfTheDetectives)
+			configurations.add(requireNonNull(configuration));
+		configurations.add(0, firstDetective);
+		configurations.add(0, mrX);
+		Set<Integer> set = new HashSet<>();
+		//Set<Integer> set2 = new HashSet<>();
+		for (PlayerConfiguration configuration : configurations) {
+			if (set.contains(configuration.location))
+				throw new IllegalArgumentException("Duplicate location");
+			set.add(configuration.location);
+			//if(set.contains(configuration.colour))
+			//	throw new IllegalArgumentException("Duplicate colour");
+			//set.add(configuration.colour);
+		}
 	}
 
 	@Override
