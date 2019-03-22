@@ -39,41 +39,44 @@ public class ScotlandYardModel implements ScotlandYardGame {
 		//ensure rounds and graph cannot be null
 		this.rounds = requireNonNull(rounds);
 		this.graph = requireNonNull(graph);
-
 		//ensure that rounds is not empty
 		if (rounds.isEmpty()) {
 			throw new IllegalArgumentException("Empty rounds");
 		}
-
 		//ensure that graph is not empty
 		if(graph.isEmpty()) {
 			throw new IllegalArgumentException("Empty graph");
 		}
-
 		//ensure that MrX is black
 		if (mrX.colour != BLACK) { // or mr.colour.isDetective()
 			throw new IllegalArgumentException("MrX should be Black");
 		}
-
 		//put players into temporary list so that we can perform checks
 		ArrayList<PlayerConfiguration> configurations = new ArrayList<>();
 		for (PlayerConfiguration configuration : restOfTheDetectives)
 			configurations.add(requireNonNull(configuration));
 		configurations.add(0, firstDetective);
 		configurations.add(0, mrX);
-
-		//iterate over list checking that locations and colours are not duplicated
+		//iterate over list to check validity
 		Set<Integer> set1 = new HashSet<>();
 		Set<Colour> set2 = new HashSet<>();
 		for (PlayerConfiguration configuration : configurations) {
+			//check for location duplication
 			if (set1.contains(configuration.location))
 				throw new IllegalArgumentException("Duplicate location");
 			set1.add(configuration.location);
+			//check for colour duplication
 			if(set2.contains(configuration.colour))
 				throw new IllegalArgumentException("Duplicate colour");
 			set2.add(configuration.colour);
+			//check for detectives with secret or double tickets
 			if((configuration.tickets.containsKey(SECRET) || configuration.tickets.containsKey(DOUBLE)) && (configuration.colour != BLACK))
-				throw new IllegalArgumentException("Detective holds secret card");
+				throw new IllegalArgumentException("Detective holds secret or double card");
+			//check all ticket types exist
+			if(!(configuration.tickets.containsKey(Ticket.TAXI) && configuration.tickets.containsKey(Ticket.BUS) && configuration.tickets.containsKey(Ticket.UNDERGROUND)))
+				throw new IllegalArgumentException("Missing detective ticket type");
+			if((configuration.colour == BLACK) && !(configuration.tickets.containsKey(SECRET)&& configuration.tickets.containsKey(DOUBLE)))
+				throw new IllegalArgumentException("Missing MrX ticket type");
 		}
 
 	}
