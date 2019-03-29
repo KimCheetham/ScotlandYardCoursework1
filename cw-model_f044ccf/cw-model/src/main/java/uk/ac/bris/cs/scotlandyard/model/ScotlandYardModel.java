@@ -31,7 +31,7 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	private PlayerConfiguration mrX;
 	private PlayerConfiguration firstDetective;
 	private PlayerConfiguration restOfTheDetectives;
-	//private List<PlayerConfiguration> restOfTheDetectives;
+	private List<ScotlandYardPlayer> players;
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
 			PlayerConfiguration mrX, PlayerConfiguration firstDetective,
@@ -98,6 +98,9 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	@Override
 	public void startRotate() {
 		// TODO
+		if(isGameOver() == true) {
+			throw new IllegalStateException("game is already over");
+		}
 		throw new RuntimeException("Implement me");
 	}
 
@@ -111,9 +114,6 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	public List<Colour> getPlayers() {
 		// TODO
 		throw new RuntimeException("Implement me");
-		//return Collections.unmodifiableList(configurations.colour);
-		//List<Colour> players = new List<>();
-		//for()
 	}
 
 	@Override
@@ -137,7 +137,8 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	@Override
 	public boolean isGameOver() {
 		// TODO
-		throw new RuntimeException("Implement me");
+		if(rounds.size() > 1) {return false;}
+		return true;
 	}
 
 	@Override
