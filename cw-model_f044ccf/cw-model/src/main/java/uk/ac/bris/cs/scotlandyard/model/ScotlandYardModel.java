@@ -31,7 +31,7 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	private PlayerConfiguration mrX;
 	private PlayerConfiguration firstDetective;
 	private PlayerConfiguration restOfTheDetectives;
-	private List<ScotlandYardPlayer> players;
+	public List<ScotlandYardPlayer> players = new ArrayList<>();
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
 			PlayerConfiguration mrX, PlayerConfiguration firstDetective,
@@ -54,6 +54,8 @@ public class ScotlandYardModel implements ScotlandYardGame {
 		}
 		//put players into temporary list so that we can perform checks
 		ArrayList<PlayerConfiguration> configurations = new ArrayList<>();
+		//configurations.add(0, mrX);
+		//configurations.add(0, firstDetective);
 		for (PlayerConfiguration configuration : restOfTheDetectives)
 			configurations.add(requireNonNull(configuration));
 		configurations.add(0, firstDetective);
@@ -61,6 +63,7 @@ public class ScotlandYardModel implements ScotlandYardGame {
 		//iterate over list to check validity
 		Set<Integer> set1 = new HashSet<>();
 		Set<Colour> set2 = new HashSet<>();
+		//List<ScotlandYardPlayer> interim = new ArrayList<>();
 		for (PlayerConfiguration configuration : configurations) {
 			//check for location duplication
 			if (set1.contains(configuration.location))
@@ -74,13 +77,18 @@ public class ScotlandYardModel implements ScotlandYardGame {
 			if(!(configuration.tickets.containsKey(Ticket.TAXI) && configuration.tickets.containsKey(Ticket.BUS) && configuration.tickets.containsKey(Ticket.UNDERGROUND)
 					&& configuration.tickets.containsKey(SECRET) && configuration.tickets.containsKey(DOUBLE)))
 				throw new IllegalArgumentException("Missing ticket type");
-			//if((configuration.colour == BLACK) && !(configuration.tickets.containsKey(SECRET)&& configuration.tickets.containsKey(DOUBLE)))
-				//throw new IllegalArgumentException("Missing MrX ticket type");
+
 			//check for detectives with secret or double tickets
 			if(((configuration.tickets.get(SECRET)>0) || (configuration.tickets.get(DOUBLE)>0)) && (configuration.colour != BLACK))
 				throw new IllegalArgumentException("Detective holds secret or double card");
-		}
 
+			//create list of players
+			ScotlandYardPlayer player = new ScotlandYardPlayer(configuration.player, configuration.colour,
+					configuration.location, configuration.tickets);
+			//if(player == null)
+			//	throw new IllegalArgumentException("player is null");
+			players.add(player);
+		}
 	}
 
 	@Override
@@ -113,7 +121,13 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	@Override
 	public List<Colour> getPlayers() {
 		// TODO
-		throw new RuntimeException("Implement me");
+		List<Colour> playerColour = new ArrayList<>();
+		for(ScotlandYardPlayer eg : players) {
+			//if(eg.colour() != null) {
+				playerColour.add(eg.colour());
+			//}
+		}
+		return Collections.unmodifiableList(playerColour);
 	}
 
 	@Override
