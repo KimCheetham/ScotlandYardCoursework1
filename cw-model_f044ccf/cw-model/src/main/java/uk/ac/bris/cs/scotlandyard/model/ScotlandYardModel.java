@@ -23,6 +23,8 @@ import uk.ac.bris.cs.gamekit.graph.Graph;
 import uk.ac.bris.cs.gamekit.graph.ImmutableGraph;
 import uk.ac.bris.cs.gamekit.graph.Graph;
 
+import java.util.Map;
+
 // TODO implement all methods and pass all tests
 public class ScotlandYardModel implements ScotlandYardGame {
 
@@ -32,6 +34,8 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	private PlayerConfiguration firstDetective;
 	private PlayerConfiguration restOfTheDetectives;
 	public List<ScotlandYardPlayer> players = new ArrayList<>();
+	int currentRound;
+	int mrXLocation;
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
 			PlayerConfiguration mrX, PlayerConfiguration firstDetective,
@@ -54,8 +58,6 @@ public class ScotlandYardModel implements ScotlandYardGame {
 		}
 		//put players into temporary list so that we can perform checks
 		ArrayList<PlayerConfiguration> configurations = new ArrayList<>();
-		//configurations.add(0, mrX);
-		//configurations.add(0, firstDetective);
 		for (PlayerConfiguration configuration : restOfTheDetectives)
 			configurations.add(requireNonNull(configuration));
 		configurations.add(0, firstDetective);
@@ -72,6 +74,7 @@ public class ScotlandYardModel implements ScotlandYardGame {
 			//check for colour duplication
 			if(set2.contains(configuration.colour))
 				throw new IllegalArgumentException("Duplicate colour");
+			set2.add(configuration.colour);
 
 			//check all ticket types exist
 			if(!(configuration.tickets.containsKey(Ticket.TAXI) && configuration.tickets.containsKey(Ticket.BUS) && configuration.tickets.containsKey(Ticket.UNDERGROUND)
@@ -85,10 +88,11 @@ public class ScotlandYardModel implements ScotlandYardGame {
 			//create list of players
 			ScotlandYardPlayer player = new ScotlandYardPlayer(configuration.player, configuration.colour,
 					configuration.location, configuration.tickets);
-			//if(player == null)
-			//	throw new IllegalArgumentException("player is null");
 			players.add(player);
 		}
+		//initialise current round as game not started and MrX location as unknown ie 0
+		currentRound = NOT_STARTED;
+		mrXLocation = 0;
 	}
 
 	@Override
@@ -105,7 +109,6 @@ public class ScotlandYardModel implements ScotlandYardGame {
 
 	@Override
 	public void startRotate() {
-		// TODO
 		if(isGameOver() == true) {
 			throw new IllegalStateException("game is already over");
 		}
@@ -114,57 +117,77 @@ public class ScotlandYardModel implements ScotlandYardGame {
 
 	@Override
 	public Collection<Spectator> getSpectators() {
-		// TODO
 		throw new RuntimeException("Implement me");
 	}
 
 	@Override
 	public List<Colour> getPlayers() {
-		// TODO
+		//returns unmodifiable
 		List<Colour> playerColour = new ArrayList<>();
 		for(ScotlandYardPlayer eg : players) {
-			//if(eg.colour() != null) {
 				playerColour.add(eg.colour());
-			//}
 		}
 		return Collections.unmodifiableList(playerColour);
 	}
 
 	@Override
 	public Set<Colour> getWinningPlayers() {
-		// TODO
-		throw new RuntimeException("Implement me");
+		Set<Colour> empty = new HashSet<>();
+		return Collections.unmodifiableSet(empty);
 	}
 
 	@Override
 	public Optional<Integer> getPlayerLocation(Colour colour) {
-		// TODO
-		throw new RuntimeException("Implement me");
+		Optional<Integer> detectiveLocation = Optional.empty();
+		if(colour == BLACK) {
+			if (rounds.get(currentRound) == true) {
+				for (ScotlandYardPlayer eg : players) {
+					if (eg.colour() == colour) {
+						mrXLocation = eg.location();
+					}
+				}
+			}
+			return Optional.of(mrXLocation);
+		}
+		else {
+			for (ScotlandYardPlayer eg : players) {
+				if (eg.colour() == colour) {
+					detectiveLocation = Optional.of(eg.location());
+				}
+			}
+		}
+		return detectiveLocation;
 	}
 
 	@Override
 	public Optional<Integer> getPlayerTickets(Colour colour, Ticket ticket) {
-		// TODO
-		throw new RuntimeException("Implement me");
+		Optional<Integer> n = Optional.empty();
+		Map<Ticket, Integer> givenPlayerTickets = Collections.emptyMap();
+		for(ScotlandYardPlayer givenPlayer : players) {
+			if(givenPlayer.colour() == colour)
+				givenPlayerTickets = givenPlayer.tickets();
+				n = Optional.ofNullable(givenPlayerTickets.get(ticket));
+		}
+		return n;
 	}
 
 	@Override
 	public boolean isGameOver() {
-		// TODO
 		if(rounds.size() > 1) {return false;}
 		return true;
 	}
 
 	@Override
 	public Colour getCurrentPlayer() {
-		// TODO
-		throw new RuntimeException("Implement me");
+		int n = getCurrentRound();
+		int x = n%(players.size());
+		ScotlandYardPlayer current = players.get(x);
+		return current.colour();
 	}
 
 	@Override
 	public int getCurrentRound() {
-		// TODO
-		throw new RuntimeException("Implement me");
+		return currentRound;
 	}
 
 	@Override
