@@ -109,10 +109,20 @@ public class ScotlandYardModel implements ScotlandYardGame {
 
 	@Override
 	public void startRotate() {
-		if(isGameOver() == true) {
+		/*if(isGameOver() == true) {
 			throw new IllegalStateException("game is already over");
+		}*/
+		Set<Move> moves = new HashSet<>();
+		ScotlandYardView moveView = null;
+		Colour current = getCurrentPlayer();
+		Consumer<Move> consumer = null;
+		Player test = null;
+		for (ScotlandYardPlayer eg : players) {
+			if(current == eg.colour())
+				test = eg.player();
+				test.makeMove(moveView, eg.location(), moves, consumer);
+
 		}
-		throw new RuntimeException("Implement me");
 	}
 
 	@Override
