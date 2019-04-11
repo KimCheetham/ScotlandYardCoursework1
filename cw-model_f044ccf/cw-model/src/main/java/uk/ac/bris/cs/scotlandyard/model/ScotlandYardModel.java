@@ -34,8 +34,10 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	private PlayerConfiguration firstDetective;
 	private PlayerConfiguration restOfTheDetectives;
 	public List<ScotlandYardPlayer> players = new ArrayList<>();
+	public List<Spectator> spectators = new ArrayList<>();
 	int currentRound;
 	int mrXLocation;
+
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
 			PlayerConfiguration mrX, PlayerConfiguration firstDetective,
@@ -99,6 +101,8 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	public void registerSpectator(Spectator spectator) {
 		// TODO
 		throw new RuntimeException("Implement me");
+		//Spectator eg = new Spectator();
+		//spectators.add();
 	}
 
 	@Override
@@ -109,24 +113,45 @@ public class ScotlandYardModel implements ScotlandYardGame {
 
 	@Override
 	public void startRotate() {
-		/*if(isGameOver() == true) {
-			throw new IllegalStateException("game is already over");
-		}*/
 		Set<Move> moves = new HashSet<>();
-		ScotlandYardView moveView = null;
-		Colour current = getCurrentPlayer();
-		Consumer<Move> consumer = null;
+		Consumer<Move> consumerMove = a -> {
+			if(a == null) {
+				throw new NullPointerException("Null move made");
+			}
+			for(Move eg : moves) {
+				if(a != eg) {
+					throw new NullPointerException("Non-valid move made");
+				}
+			}
+		};
 		Player test = null;
-		for (ScotlandYardPlayer eg : players) {
-			if(current == eg.colour())
-				test = eg.player();
-				test.makeMove(moveView, eg.location(), moves, consumer);
+		for(ScotlandYardPlayer eg : players) {
+			//Move sample = new PassMove(eg.colour());
+			//moves.add(sample);
+			//Integer x = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND);
+			//Node x = new Node(eg.location());
+			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(eg.location()));
+			int undergroundTicketCount = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND).get();
+			for(Edge<Integer, Transport> x : possibleMoves) {
+				if(undergroundTicketCount > 0) {
+					if(x.data() == Transport UNDERGROUND) {
+						//Graph<Integer, Transport> floob = new Graph();
+						//floob.addNode(x.destination());
 
+						int destination = x.destination.value();
+						Move validMove = new TicketMove(eg.colour(), Ticket.UNDERGROUND, destination);
+						moves.add(validMove);
+					}
+				}
+			}
+			test = eg.player();
+			test.makeMove(this, eg.location(), moves, consumerMove);
 		}
 	}
 
 	@Override
 	public Collection<Spectator> getSpectators() {
+		//return Collections.unmodifiableCollection(spectators);
 		throw new RuntimeException("Implement me");
 	}
 
@@ -189,10 +214,10 @@ public class ScotlandYardModel implements ScotlandYardGame {
 
 	@Override
 	public Colour getCurrentPlayer() {
-		int n = getCurrentRound();
-		int x = n%(players.size());
-		ScotlandYardPlayer current = players.get(x);
-		return current.colour();
+		ScotlandYardPlayer currentPlayer;
+		currentPlayer = players.get(0);
+		return currentPlayer.colour();
+
 	}
 
 	@Override
