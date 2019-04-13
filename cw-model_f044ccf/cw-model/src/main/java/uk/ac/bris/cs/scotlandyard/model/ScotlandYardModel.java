@@ -37,6 +37,7 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	public List<Spectator> spectators = new ArrayList<>();
 	int currentRound;
 	int mrXLocation;
+	int intermediateLocation;
 
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
@@ -111,41 +112,121 @@ public class ScotlandYardModel implements ScotlandYardGame {
 		throw new RuntimeException("Implement me");
 	}
 
-	@Override
-	public void startRotate() {
-		Set<Move> moves = new HashSet<>();
-		Consumer<Move> consumerMove = a -> {
-			if(a == null) {
-				throw new NullPointerException("Null move made");
-			}
-			for(Move eg : moves) {
-				if(a != eg) {
-					throw new NullPointerException("Non-valid move made");
-				}
-			}
-		};
-		Player test = null;
-		for(ScotlandYardPlayer eg : players) {
-			//Move sample = new PassMove(eg.colour());
-			//moves.add(sample);
-			//Integer x = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND);
-			//Node x = new Node(eg.location());
-			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(eg.location()));
-			int undergroundTicketCount = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND).get();
-			for(Edge<Integer, Transport> x : possibleMoves) {
-				if(undergroundTicketCount > 0) {
-					if(x.data() == Transport UNDERGROUND) {
-						//Graph<Integer, Transport> floob = new Graph();
-						//floob.addNode(x.destination());
-
-						int destination = x.destination.value();
-						Move validMove = new TicketMove(eg.colour(), Ticket.UNDERGROUND, destination);
+	public Set<TicketMove> singleTicketLogic(int secretTicketCount, int undergroundTicketCount, int taxiTicketCount, int busTicketCount, Edge<Integer, Transport> x, ScotlandYardPlayer eg) {
+		Set<TicketMove> moves = new HashSet<>();
+		boolean locationOverlap = false;
+		//outerLoop:
+		//for(Edge<Integer, Transport> x : possibleMoves) {
+			if(eg.colour() == BLACK) {
+				if(secretTicketCount > 0) {
+					for(ScotlandYardPlayer egg : players) {
+						if(eg.location() == x.destination().value()) {
+							locationOverlap = true;
+						}
+					}
+					if(!locationOverlap) {
+						TicketMove validMove = new TicketMove(eg.colour(), Ticket.SECRET, x.destination().value());
 						moves.add(validMove);
 					}
 				}
 			}
+			if(undergroundTicketCount > 0) {
+				if (Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {
+					for (ScotlandYardPlayer egg : players) {
+						if (egg.location() == x.destination().value()) {
+							locationOverlap = true;
+						}
+					}
+					if(!locationOverlap) {
+						TicketMove validMove = new TicketMove(eg.colour(), Ticket.UNDERGROUND, x.destination().value());
+						moves.add(validMove);
+					}
+				}
+			}
+			if(taxiTicketCount > 0) {
+				if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {
+					for(ScotlandYardPlayer egg: players) {
+						if(egg.location() == x.destination().value()) {
+							locationOverlap = true;
+						}
+					}
+					if(!locationOverlap) {
+						TicketMove validMove = new TicketMove(eg.colour(), Ticket.TAXI, x.destination().value());
+						moves.add(validMove);
+					}
+				}
+			}
+			if(busTicketCount > 0) {
+				if(Ticket.fromTransport(x.data()) == Ticket.BUS) {
+					for(ScotlandYardPlayer egg : players) {
+						if(egg.location() == x.destination().value()) {
+							locationOverlap = true;
+						}
+					}
+					if(!locationOverlap) {
+						TicketMove validMove = new TicketMove(eg.colour(), Ticket.BUS, x.destination().value());
+						moves.add(validMove);
+					}
+				}
+			}
+		//}
+		return moves;
+	}
+
+	@Override
+	public void startRotate() {
+		Set<TicketMove> moves = new HashSet<>();
+		Set<Move> actualMoves = new HashSet<>();
+		Consumer<Move> consumerMove = a -> {
+			if(a == null) {
+				throw new NullPointerException("Null move made");
+			}
+			/*boolean test = false;
+			for(Move eg : moves) {
+				if(a == eg) {
+					test = true;
+				}
+			}
+			if(test == false) {
+				throw new IllegalArgumentException("Non-valid move made");
+			}*/
+		};
+		Player test = null;
+		for(ScotlandYardPlayer eg : players) {
+			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(eg.location()));
+			int undergroundTicketCount = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND).get();
+			int taxiTicketCount = getPlayerTickets(eg.colour(), Ticket.TAXI).get();
+			int busTicketCount = getPlayerTickets(eg.colour(), Ticket.BUS). get();
+			int secretTicketCount = getPlayerTickets(eg.colour(), Ticket.SECRET).get();
+			int doubleTicketCount = getPlayerTickets(eg.colour(), Ticket.DOUBLE).get();
+			for(Edge<Integer, Transport> x : possibleMoves) {
+				moves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, x, eg);
+				for(TicketMove s : moves) {
+					Move n = s;
+					actualMoves.add(n);
+				}
+				if((eg.colour() == BLACK) && (doubleTicketCount > 0)) {
+					Set<TicketMove>secondMoves = new HashSet<>();
+					for(TicketMove firstMove : moves) {
+						Collection<Edge<Integer, Transport>> secondPossibleMoves = graph.getEdgesFrom(graph.getNode(x.destination().value()));
+						for(Edge<Integer, Transport> secondPossibleMove : secondPossibleMoves) {
+							secondMoves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, secondPossibleMove, eg);
+							for(TicketMove secondMove : secondMoves) {
+								Move doubleMove = new DoubleMove(eg.colour(), firstMove, secondMove);
+								actualMoves.add(doubleMove);
+							}
+						}
+					}
+				}
+			}
+			if(actualMoves.isEmpty()) {
+				Move passMove = new PassMove(eg.colour());
+				actualMoves.add(passMove);
+			}
 			test = eg.player();
-			test.makeMove(this, eg.location(), moves, consumerMove);
+			test.makeMove(this, eg.location(), actualMoves, consumerMove);
+			moves.clear();
+			actualMoves.clear();
 		}
 	}
 
