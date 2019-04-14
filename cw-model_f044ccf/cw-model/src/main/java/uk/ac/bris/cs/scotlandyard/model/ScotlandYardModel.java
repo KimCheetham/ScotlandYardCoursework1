@@ -115,61 +115,56 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	public Set<TicketMove> singleTicketLogic(int secretTicketCount, int undergroundTicketCount, int taxiTicketCount, int busTicketCount, Edge<Integer, Transport> x, ScotlandYardPlayer eg) {
 		Set<TicketMove> moves = new HashSet<>();
 		boolean locationOverlap = false;
-		//outerLoop:
-		//for(Edge<Integer, Transport> x : possibleMoves) {
-			if(eg.colour() == BLACK) {
-				if(secretTicketCount > 0) {
-					for(ScotlandYardPlayer egg : players) {
-						if(eg.location() == x.destination().value()) {
-							locationOverlap = true;
-						}
-					}
-					if(!locationOverlap) {
-						TicketMove validMove = new TicketMove(eg.colour(), Ticket.SECRET, x.destination().value());
-						moves.add(validMove);
-					}
+		if(secretTicketCount > 0) {
+			for(ScotlandYardPlayer egg : players) {
+				if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+					locationOverlap = true;
 				}
 			}
-			if(undergroundTicketCount > 0) {
-				if (Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {
-					for (ScotlandYardPlayer egg : players) {
-						if (egg.location() == x.destination().value()) {
-							locationOverlap = true;
-						}
-					}
-					if(!locationOverlap) {
-						TicketMove validMove = new TicketMove(eg.colour(), Ticket.UNDERGROUND, x.destination().value());
-						moves.add(validMove);
+			if(!locationOverlap) {
+				TicketMove validMove = new TicketMove(eg.colour(), Ticket.SECRET, x.destination().value());
+				moves.add(validMove);
+			}
+		}
+		if(undergroundTicketCount > 0) {
+			if (Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {
+				for (ScotlandYardPlayer egg : players) {
+					if (egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+						locationOverlap = true;
 					}
 				}
-			}
-			if(taxiTicketCount > 0) {
-				if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {
-					for(ScotlandYardPlayer egg: players) {
-						if(egg.location() == x.destination().value()) {
-							locationOverlap = true;
-						}
-					}
-					if(!locationOverlap) {
-						TicketMove validMove = new TicketMove(eg.colour(), Ticket.TAXI, x.destination().value());
-						moves.add(validMove);
-					}
+				if(!locationOverlap) {
+					TicketMove validMove = new TicketMove(eg.colour(), Ticket.UNDERGROUND, x.destination().value());
+					moves.add(validMove);
 				}
 			}
-			if(busTicketCount > 0) {
-				if(Ticket.fromTransport(x.data()) == Ticket.BUS) {
-					for(ScotlandYardPlayer egg : players) {
-						if(egg.location() == x.destination().value()) {
-							locationOverlap = true;
-						}
-					}
-					if(!locationOverlap) {
-						TicketMove validMove = new TicketMove(eg.colour(), Ticket.BUS, x.destination().value());
-						moves.add(validMove);
+		}
+		if(taxiTicketCount > 0) {
+			if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {
+				for(ScotlandYardPlayer egg: players) {
+					if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+						locationOverlap = true;
 					}
 				}
+				if(!locationOverlap) {
+					TicketMove validMove = new TicketMove(eg.colour(), Ticket.TAXI, x.destination().value());
+					moves.add(validMove);
+				}
 			}
-		//}
+		}
+		if(busTicketCount > 0) {
+			if(Ticket.fromTransport(x.data()) == Ticket.BUS) {
+				for(ScotlandYardPlayer egg : players) {
+					if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+						locationOverlap = true;
+					}
+				}
+				if(!locationOverlap) {
+					TicketMove validMove = new TicketMove(eg.colour(), Ticket.BUS, x.destination().value());
+					moves.add(validMove);
+				}
+			}
+		}
 		return moves;
 	}
 
@@ -201,14 +196,18 @@ public class ScotlandYardModel implements ScotlandYardGame {
 			int doubleTicketCount = getPlayerTickets(eg.colour(), Ticket.DOUBLE).get();
 			for(Edge<Integer, Transport> x : possibleMoves) {
 				moves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, x, eg);
-				for(TicketMove s : moves) {
-					Move n = s;
-					actualMoves.add(n);
+				for(TicketMove sample : moves) {
+					Move actual = sample;
+					actualMoves.add(actual);
 				}
-				if((eg.colour() == BLACK) && (doubleTicketCount > 0)) {
+				if((eg.colour() == BLACK) && (doubleTicketCount > 0) && (getRounds().size() >= 2)) {
 					Set<TicketMove>secondMoves = new HashSet<>();
 					for(TicketMove firstMove : moves) {
 						Collection<Edge<Integer, Transport>> secondPossibleMoves = graph.getEdgesFrom(graph.getNode(x.destination().value()));
+						if(Ticket.fromTransport(x.data()) == Ticket.SECRET) {secretTicketCount = secretTicketCount - 1;}
+						if(Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {undergroundTicketCount = undergroundTicketCount - 1;}
+						if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {taxiTicketCount = taxiTicketCount - 1;}
+						if(Ticket.fromTransport(x.data()) == Ticket.BUS) {busTicketCount = busTicketCount - 1;}
 						for(Edge<Integer, Transport> secondPossibleMove : secondPossibleMoves) {
 							secondMoves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, secondPossibleMove, eg);
 							for(TicketMove secondMove : secondMoves) {
@@ -216,6 +215,10 @@ public class ScotlandYardModel implements ScotlandYardGame {
 								actualMoves.add(doubleMove);
 							}
 						}
+						if(Ticket.fromTransport(x.data()) == Ticket.SECRET) {secretTicketCount = secretTicketCount + 1;}
+						if(Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {undergroundTicketCount = undergroundTicketCount + 1;}
+						if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {taxiTicketCount = taxiTicketCount + 1;}
+						if(Ticket.fromTransport(x.data()) == Ticket.BUS) {busTicketCount = busTicketCount + 1;}
 					}
 				}
 			}
