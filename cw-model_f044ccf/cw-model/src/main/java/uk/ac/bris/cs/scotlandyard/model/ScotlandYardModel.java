@@ -112,16 +112,21 @@ public class ScotlandYardModel implements ScotlandYardGame {
 		throw new RuntimeException("Implement me");
 	}
 
+	//extra function to help with valid move logic
 	public Set<TicketMove> singleTicketLogic(int secretTicketCount, int undergroundTicketCount, int taxiTicketCount, int busTicketCount, Edge<Integer, Transport> x, ScotlandYardPlayer eg) {
 		Set<TicketMove> moves = new HashSet<>();
 		boolean locationOverlap = false;
+		//test each ticket count is higher then zero then perform further logic to determine valid moves
 		if(secretTicketCount > 0) {
 			for(ScotlandYardPlayer egg : players) {
+				//first clause of if: if possible move node destination is equal to a player location then move is not valid and will not be added to moves set
+				//second clause of if: allows Mr X to move back to his original square when completing a double move
 				if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
 					locationOverlap = true;
 				}
 			}
 			if(!locationOverlap) {
+				//if there is no location overlap but MrX can still move back to original location then move is added to moves set
 				TicketMove validMove = new TicketMove(eg.colour(), Ticket.SECRET, x.destination().value());
 				moves.add(validMove);
 			}
@@ -172,6 +177,7 @@ public class ScotlandYardModel implements ScotlandYardGame {
 	public void startRotate() {
 		Set<TicketMove> moves = new HashSet<>();
 		Set<Move> actualMoves = new HashSet<>();
+		//consumer used to throw back exceptions if the player picks a move that is not in the valid move set
 		Consumer<Move> consumerMove = a -> {
 			if(a == null) {
 				throw new NullPointerException("Null move made");
@@ -186,35 +192,46 @@ public class ScotlandYardModel implements ScotlandYardGame {
 				throw new IllegalArgumentException("Non-valid move made");
 			}*/
 		};
-		Player test = null;
+		//rotate through players calculating their valid moves then asking them to make a move
 		for(ScotlandYardPlayer eg : players) {
+			//create collection of all possible movement from the current node location
 			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(eg.location()));
+			//calculate types and numbers of tickets that they player holds
 			int undergroundTicketCount = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND).get();
 			int taxiTicketCount = getPlayerTickets(eg.colour(), Ticket.TAXI).get();
 			int busTicketCount = getPlayerTickets(eg.colour(), Ticket.BUS). get();
 			int secretTicketCount = getPlayerTickets(eg.colour(), Ticket.SECRET).get();
 			int doubleTicketCount = getPlayerTickets(eg.colour(), Ticket.DOUBLE).get();
+			//rotate through set of possible moves performing singleTicketLogic function to determine if move is valid
 			for(Edge<Integer, Transport> x : possibleMoves) {
 				moves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, x, eg);
+				//if valid then move from intermediate set containing types ticketMove to final 'actual' set containing types Move (therefore also allows passMoves to be contained within)
 				for(TicketMove sample : moves) {
 					Move actual = sample;
 					actualMoves.add(actual);
 				}
+				//if the player is MrX and he has double tickets and there are more than two rounds left in the game then double ticket logic is performed
 				if((eg.colour() == BLACK) && (doubleTicketCount > 0) && (getRounds().size() >= 2)) {
 					Set<TicketMove>secondMoves = new HashSet<>();
+					//rotate through moves in current moves set
 					for(TicketMove firstMove : moves) {
+						//calculate possible second moves from first moves
 						Collection<Edge<Integer, Transport>> secondPossibleMoves = graph.getEdgesFrom(graph.getNode(x.destination().value()));
+						//reduce the ticket count of the correct first move ticket type
 						if(Ticket.fromTransport(x.data()) == Ticket.SECRET) {secretTicketCount = secretTicketCount - 1;}
 						if(Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {undergroundTicketCount = undergroundTicketCount - 1;}
 						if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {taxiTicketCount = taxiTicketCount - 1;}
 						if(Ticket.fromTransport(x.data()) == Ticket.BUS) {busTicketCount = busTicketCount - 1;}
+						//iterate through possible second moves and determine if they are valid
 						for(Edge<Integer, Transport> secondPossibleMove : secondPossibleMoves) {
 							secondMoves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, secondPossibleMove, eg);
+							//if valid then move from intermediate set containing types ticketMove to final 'actual' set containing types Move (therefore also allows passMove to be contained within)
 							for(TicketMove secondMove : secondMoves) {
 								Move doubleMove = new DoubleMove(eg.colour(), firstMove, secondMove);
 								actualMoves.add(doubleMove);
 							}
 						}
+						//return ticket counts to normal as this is only a hypothetical situation and player has not chosen to move yet
 						if(Ticket.fromTransport(x.data()) == Ticket.SECRET) {secretTicketCount = secretTicketCount + 1;}
 						if(Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {undergroundTicketCount = undergroundTicketCount + 1;}
 						if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {taxiTicketCount = taxiTicketCount + 1;}
@@ -222,12 +239,13 @@ public class ScotlandYardModel implements ScotlandYardGame {
 					}
 				}
 			}
+			//if there are no possible valid moves then passMove is added to the 'actual' valid move set
 			if(actualMoves.isEmpty()) {
 				Move passMove = new PassMove(eg.colour());
 				actualMoves.add(passMove);
 			}
-			test = eg.player();
-			test.makeMove(this, eg.location(), actualMoves, consumerMove);
+			//prompt player to move then clear intermediate and final move set ready to calculate valid moves for next player
+			eg.player().makeMove(this, eg.location(), actualMoves, consumerMove);
 			moves.clear();
 			actualMoves.clear();
 		}
