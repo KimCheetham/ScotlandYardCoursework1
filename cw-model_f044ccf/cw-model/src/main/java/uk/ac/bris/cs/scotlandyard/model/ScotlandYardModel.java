@@ -26,7 +26,7 @@ import uk.ac.bris.cs.gamekit.graph.Graph;
 import java.util.Map;
 
 // TODO implement all methods and pass all tests
-public class ScotlandYardModel implements ScotlandYardGame, Consumer {
+public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 
 	private List<Boolean> rounds;
 	private Graph<Integer, Transport> graph;
@@ -37,8 +37,12 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 	public List<Spectator> spectators = new ArrayList<>();
 	int currentRound;
 	ScotlandYardPlayer currentPlayer;
-	int mrXLocation;
+	int mrXLocationDisplayed;
+	int mrXLocationActual;
 	int intermediateLocation;
+	boolean mrXWin;
+	boolean gameOver;
+	//Spectator spectator;
 
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
@@ -96,15 +100,15 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 		}
 		//initialise current round as game not started and MrX location as unknown ie 0
 		currentRound = NOT_STARTED;
-		mrXLocation = 0;
+		currentPlayer = players.get(0);
+		mrXLocationActual = 0;
+		mrXLocationDisplayed = 0;
 	}
 
 	@Override
 	public void registerSpectator(Spectator spectator) {
 		// TODO
 		throw new RuntimeException("Implement me");
-		//Spectator eg = new Spectator();
-		//spectators.add();
 	}
 
 	@Override
@@ -114,15 +118,18 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 	}
 
 	//extra function to help with valid move logic
-	public HashSet<TicketMove> singleTicketLogic(int secretTicketCount, int undergroundTicketCount, int taxiTicketCount, int busTicketCount, Edge<Integer, Transport> x, ScotlandYardPlayer eg) {
+	public HashSet<TicketMove> singleTicketLogic(int secretTicketCount, int undergroundTicketCount, int taxiTicketCount,
+												 int busTicketCount, Edge<Integer, Transport> x, ScotlandYardPlayer eg) {
 		HashSet<TicketMove> moves = new HashSet<>();
 		boolean locationOverlap = false;
+		//List<ScotlandYardPlayer> withoutMrX = players;
+		//withoutMrX.remove(0);
 		//test each ticket count is higher then zero then perform further logic to determine valid moves
 		if(secretTicketCount > 0) {
 			for(ScotlandYardPlayer egg : players) {
 				//first clause of if: if possible move node destination is equal to a player location then move is not valid and will not be added to moves set
 				//second clause of if: allows Mr X to move back to his original square when completing a double move
-				if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+				if((egg.colour() != BLACK && egg.location() == x.destination().value()) && !(x.destination().value() == eg.location())) {
 					locationOverlap = true;
 				}
 			}
@@ -135,7 +142,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 		if(undergroundTicketCount > 0) {
 			if (Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {
 				for (ScotlandYardPlayer egg : players) {
-					if (egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+					if ((egg.colour()!=BLACK && egg.location() == x.destination().value()) && !(x.destination().value() == eg.location())) {
 						locationOverlap = true;
 					}
 				}
@@ -148,7 +155,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 		if(taxiTicketCount > 0) {
 			if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {
 				for(ScotlandYardPlayer egg: players) {
-					if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+					if((egg.colour()!=BLACK && egg.location() == x.destination().value()) && !(x.destination().value() == eg.location())) {
 						locationOverlap = true;
 					}
 				}
@@ -161,7 +168,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 		if(busTicketCount > 0) {
 			if(Ticket.fromTransport(x.data()) == Ticket.BUS) {
 				for(ScotlandYardPlayer egg : players) {
-					if(egg.location() == x.destination().value() && !(x.destination().value() == eg.location())) {
+					if((egg.colour() != BLACK && egg.location() == x.destination().value()) && !(x.destination().value() == eg.location())) {
 						locationOverlap = true;
 					}
 				}
@@ -174,56 +181,73 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 		return moves;
 	}
 
-	/*public void checkValidity(Move a, Set<Move> actualMoves) {
-		if(a == null) {
-			throw new NullPointerException("null move made");
-		}
-		/*boolean validity = false;
-		for(Move move : actualMoves) {
-			if(move == a) {
-				validity = true;
-			}
-		}
-		if(validity == false) {
-			throw new IllegalArgumentException("illegal move chosen");
-		}
-	}*/
+	public void spectatorMove(Move move) {
+		//ScotlandYardView view = this;
+		//spectator.onMoveMade(view, move);
+	}
 
-	public void accept() {
+	public void playerGameMove(TicketMove move) {
+		Ticket usedTicket = move.ticket();
+		currentPlayer.removeTicket(usedTicket);
+		currentPlayer.location(move.destination());
+		if(getCurrentPlayer() != BLACK) {
+			players.get(0).addTicket(usedTicket);
+			//currentPlayer.location(move.destination());
+		}
+		else {
+			mrXLocationActual = currentPlayer.location();
+		}
+	}
+
+	public void playerGameDoubleMove(DoubleMove move) {
+		playerGameMove(move.firstMove());
+		playerGameMove(move.secondMove());
+		currentPlayer.removeTicket(DOUBLE);
+	}
+
+	@Override
+	public void accept(Move move) {
 		MoveVisitor visitor = new MoveVisitor() {
 			@Override
-			public void Visit(PassMove move) {}
+			public void visit(PassMove move) {
+				//spectatorMove(move);
+			}
 			@Override
-			public void Visit(TicketMove move) {}
+			public void visit(TicketMove move) {
+				playerGameMove(move);
+			}
 			@Override
-			public void Visit(DoubleMove move) {}
+			public void visit(DoubleMove move) {
+				playerGameDoubleMove(move);
+			}
 		};
+		if(move == null) {
+			throw new NullPointerException("null move");
+		}
+		move.visit(visitor);
 	}
 
 	public HashSet<Move> generateMoves(ScotlandYardPlayer player) {
 		HashSet<TicketMove> moves = new HashSet<>();
 		HashSet<Move> actualMoves = new HashSet<>();
-		//rotate through players calculating their valid moves then asking them to make a move
-		for(ScotlandYardPlayer eg : players) {
-			currentPlayer = eg;
 			//create collection of all possible movement from the current node location
-			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(eg.location()));
+			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(currentPlayer.location()));
 			//calculate types and numbers of tickets that they player holds
-			int undergroundTicketCount = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND).get();
-			int taxiTicketCount = getPlayerTickets(eg.colour(), Ticket.TAXI).get();
-			int busTicketCount = getPlayerTickets(eg.colour(), Ticket.BUS).get();
-			int secretTicketCount = getPlayerTickets(eg.colour(), Ticket.SECRET).get();
-			int doubleTicketCount = getPlayerTickets(eg.colour(), Ticket.DOUBLE).get();
+			int undergroundTicketCount = getPlayerTickets(currentPlayer.colour(), Ticket.UNDERGROUND).get();
+			int taxiTicketCount = getPlayerTickets(currentPlayer.colour(), Ticket.TAXI).get();
+			int busTicketCount = getPlayerTickets(currentPlayer.colour(), Ticket.BUS).get();
+			int secretTicketCount = getPlayerTickets(currentPlayer.colour(), Ticket.SECRET).get();
+			int doubleTicketCount = getPlayerTickets(currentPlayer.colour(), Ticket.DOUBLE).get();
 			//rotate through set of possible moves performing singleTicketLogic function to determine if move is valid
 			for (Edge<Integer, Transport> x : possibleMoves) {
-				moves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, x, eg);
+				moves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, x, currentPlayer);
 				//if valid then move from intermediate set containing types ticketMove to final 'actual' set containing types Move (therefore also allows passMoves to be contained within)
 				for (TicketMove sample : moves) {
 					Move actual = sample;
 					actualMoves.add(actual);
 				}
 				//if the player is MrX and he has double tickets and there are more than two rounds left in the game then double ticket logic is performed
-				if ((eg.colour() == BLACK) && (doubleTicketCount > 0) && (getRounds().size() >= 2)) {
+				if ((currentPlayer.colour() == BLACK) && (doubleTicketCount > 0) && (getRounds().size() >= 2)) {
 					HashSet<TicketMove> secondMoves = new HashSet<>();
 					//rotate through moves in current moves set
 					for (TicketMove firstMove : moves) {
@@ -244,10 +268,10 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 						}
 						//iterate through possible second moves and determine if they are valid
 						for (Edge<Integer, Transport> secondPossibleMove : secondPossibleMoves) {
-							secondMoves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, secondPossibleMove, eg);
+							secondMoves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, secondPossibleMove, currentPlayer);
 							//if valid then move from intermediate set containing types ticketMove to final 'actual' set containing types Move (therefore also allows passMove to be contained within)
 							for (TicketMove secondMove : secondMoves) {
-								Move doubleMove = new DoubleMove(eg.colour(), firstMove, secondMove);
+								Move doubleMove = new DoubleMove(currentPlayer.colour(), firstMove, secondMove);
 								actualMoves.add(doubleMove);
 							}
 						}
@@ -268,96 +292,37 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 				}
 			}
 			//if there are no possible valid moves then passMove is added to the 'actual' valid move set
-			if (actualMoves.isEmpty()) {
-				Move passMove = new PassMove(eg.colour());
+			/*if (player.colour() != BLACK && actualMoves.isEmpty()) {
+				Move passMove = new PassMove(currentPlayer.colour());
 				actualMoves.add(passMove);
-			}
-		}
+			}*/
 		return actualMoves;
 	}
 
 	public void playerTurn() {
 		HashSet<Move> moves = generateMoves(currentPlayer);
+		if (currentPlayer.colour() != BLACK && moves.isEmpty()) {
+			Move passMove = new PassMove(currentPlayer.colour());
+			moves.add(passMove);
+		}
 		currentPlayer.player().makeMove(this, currentPlayer.location(), moves, this);
 	}
 
 	@Override
 	public void startRotate(){
-		if(isGameOver()){
-			throw new IllegalStateException("game already over");
+		if(currentRound == NOT_STARTED) {
+			//if(isGameOver()) {
+			//	throw new IllegalStateException("game already over");
+			//}
+			currentRound = 1;
+		}
+		else{
+			currentRound = currentRound + 1;
 		}
 		for(ScotlandYardPlayer eg: players) {
-			if(eg.colour() == BLACK) {
-				currentPlayer = eg;
-			}
-		}
-		playerTurn();
-
-		/*currentRound = currentRound + 1;
-		List<TicketMove> moves = new ArrayList<>();
-		Set<Move> actualMoves = new HashSet<>();
-		//rotate through players calculating their valid moves then asking them to make a move
-		for(ScotlandYardPlayer eg : players) {
 			currentPlayer = eg;
-			//create collection of all possible movement from the current node location
-			Collection<Edge<Integer, Transport>> possibleMoves = graph.getEdgesFrom(graph.getNode(eg.location()));
-			//calculate types and numbers of tickets that they player holds
-			int undergroundTicketCount = getPlayerTickets(eg.colour(), Ticket.UNDERGROUND).get();
-			int taxiTicketCount = getPlayerTickets(eg.colour(), Ticket.TAXI).get();
-			int busTicketCount = getPlayerTickets(eg.colour(), Ticket.BUS). get();
-			int secretTicketCount = getPlayerTickets(eg.colour(), Ticket.SECRET).get();
-			int doubleTicketCount = getPlayerTickets(eg.colour(), Ticket.DOUBLE).get();
-			//rotate through set of possible moves performing singleTicketLogic function to determine if move is valid
-			for(Edge<Integer, Transport> x : possibleMoves) {
-				moves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, x, eg);
-				//if valid then move from intermediate set containing types ticketMove to final 'actual' set containing types Move (therefore also allows passMoves to be contained within)
-				for(TicketMove sample : moves) {
-					Move actual = sample;
-					actualMoves.add(actual);
-				}
-				//if the player is MrX and he has double tickets and there are more than two rounds left in the game then double ticket logic is performed
-				if((eg.colour() == BLACK) && (doubleTicketCount > 0) && (getRounds().size() >= 2)) {
-					List<TicketMove>secondMoves = new ArrayList<>();
-					//rotate through moves in current moves set
-					for(TicketMove firstMove : moves) {
-						//calculate possible second moves from first moves
-						Collection<Edge<Integer, Transport>> secondPossibleMoves = graph.getEdgesFrom(graph.getNode(x.destination().value()));
-						//reduce the ticket count of the correct first move ticket type
-						if(Ticket.fromTransport(x.data()) == Ticket.SECRET) {secretTicketCount = secretTicketCount - 1;}
-						if(Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {undergroundTicketCount = undergroundTicketCount - 1;}
-						if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {taxiTicketCount = taxiTicketCount - 1;}
-						if(Ticket.fromTransport(x.data()) == Ticket.BUS) {busTicketCount = busTicketCount - 1;}
-						//iterate through possible second moves and determine if they are valid
-						for(Edge<Integer, Transport> secondPossibleMove : secondPossibleMoves) {
-							secondMoves = singleTicketLogic(secretTicketCount, undergroundTicketCount, taxiTicketCount, busTicketCount, secondPossibleMove, eg);
-							//if valid then move from intermediate set containing types ticketMove to final 'actual' set containing types Move (therefore also allows passMove to be contained within)
-							for(TicketMove secondMove : secondMoves) {
-								Move doubleMove = new DoubleMove(eg.colour(), firstMove, secondMove);
-								actualMoves.add(doubleMove);
-							}
-						}
-						//return ticket counts to normal as this is only a hypothetical situation and player has not chosen to move yet
-						if(Ticket.fromTransport(x.data()) == Ticket.SECRET) {secretTicketCount = secretTicketCount + 1;}
-						if(Ticket.fromTransport(x.data()) == Ticket.UNDERGROUND) {undergroundTicketCount = undergroundTicketCount + 1;}
-						if(Ticket.fromTransport(x.data()) == Ticket.TAXI) {taxiTicketCount = taxiTicketCount + 1;}
-						if(Ticket.fromTransport(x.data()) == Ticket.BUS) {busTicketCount = busTicketCount + 1;}
-					}
-				}
-			}
-			//if there are no possible valid moves then passMove is added to the 'actual' valid move set
-			if(actualMoves.isEmpty()) {
-				Move passMove = new PassMove(eg.colour());
-				actualMoves.add(passMove);
-			}
-			//consumer used to throw back exceptions if the player picks a move that is not in the valid move set
-			Consumer<Move> consumerMove = a -> {
-				checkValidity(a, actualMoves);
-			};
-			//prompt player to move then clear intermediate and final move set ready to calculate valid moves for next player
-			eg.player().makeMove(this, eg.location(), actualMoves, consumerMove);
-			moves.clear();
-			actualMoves.clear();
-		}*/
+			playerTurn();
+		}
 	}
 
 	@Override
@@ -378,31 +343,44 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 
 	@Override
 	public Set<Colour> getWinningPlayers() {
-		Set<Colour> empty = new HashSet<>();
-		return Collections.unmodifiableSet(empty);
+		Set<Colour> winners = new HashSet<>();
+		if(isGameOver() == false) {
+			return Collections.unmodifiableSet(winners);
+		}
+		if(mrXWin == false) {
+			for(ScotlandYardPlayer eg : players) {
+				if(eg.colour() != BLACK) {
+					winners.add(eg.colour());
+				}
+			}
+		}
+		else {
+			winners.add(BLACK);
+			//return Collections.unmodifiableSet(winners);
+		}
+		return Collections.unmodifiableSet(winners);
 	}
 
 	@Override
 	public Optional<Integer> getPlayerLocation(Colour colour) {
-		Optional<Integer> detectiveLocation = Optional.empty();
+		Optional<Integer> location = Optional.empty();
 		if(colour == BLACK) {
-			if (rounds.get(currentRound - 1) == true) {
-				for (ScotlandYardPlayer eg : players) {
-					if (eg.colour() == colour) {
-						mrXLocation = eg.location();
-					}
-				}
+			if(currentRound == NOT_STARTED){
+				return location = Optional.of(0);
 			}
-			return Optional.of(mrXLocation);
+			else if (rounds.get(getCurrentRound() - 1) == true) {
+				mrXLocationDisplayed = mrXLocationActual;
+			}
+			return location = Optional.of(mrXLocationDisplayed);
 		}
 		else {
 			for (ScotlandYardPlayer eg : players) {
 				if (eg.colour() == colour) {
-					detectiveLocation = Optional.of(eg.location());
+					location = Optional.of(eg.location());
 				}
 			}
 		}
-		return detectiveLocation;
+		return location;
 	}
 
 	@Override
@@ -419,14 +397,49 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer {
 
 	@Override
 	public boolean isGameOver() {
-		if(rounds.size() > 1) {return false;}
-		return true;
+		boolean playerMovesLeft = false;
+		if(rounds.size() == currentRound) {
+			mrXWin = true;
+			return true;
+		}
+		for(ScotlandYardPlayer eg : players) {
+			HashSet<Move> moves = generateMoves(eg);
+			if(eg.colour() == BLACK && (!(eg.hasTickets(Ticket.UNDERGROUND)) && !(eg.hasTickets(Ticket.BUS)) && !(eg.hasTickets(Ticket.TAXI)) &&(eg.hasTickets(Ticket.SECRET)) && moves.isEmpty())) {
+			//if(eg.colour() == BLACK) {
+
+				//if(moves.isEmpty()) {
+					mrXWin = false;
+					return true;
+				//}
+			}
+
+			if(eg.colour() != BLACK) {
+				//HashSet<Move> moves = generateMoves(eg);
+				if(!(moves.isEmpty())) {
+					playerMovesLeft = true;
+				}
+			}
+			if(eg.colour() != BLACK && !(eg.hasTickets(Ticket.UNDERGROUND)) && !(eg.hasTickets(Ticket.BUS)) && !(eg.hasTickets(Ticket.TAXI))) {
+				mrXWin = true;
+				return true;
+			}
+			if(eg.colour() != BLACK && eg.location() == mrXLocationActual) {
+				mrXWin = false;
+				return true;
+			}
+		}
+		/*if (playerMovesLeft = false){
+			mrXWin = true;
+			return true;
+		}*/
+		return false;
 	}
 
 	@Override
 	public Colour getCurrentPlayer() {
 		//ScotlandYardPlayer currentPlayer;
 		//currentPlayer = players.get(0);
+		//if(currentRound == NOT_STARTED)
 		return currentPlayer.colour();
 
 	}
