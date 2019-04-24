@@ -13,44 +13,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="446" column="51" selection-start-line="446" selection-start-column="51" selection-end-line="446" selection-end-column="51" />
+            <state relative-caret-position="38">
+              <caret line="220" column="14" selection-start-line="220" selection-start-column="14" selection-end-line="220" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#registerSpectator#0;class#ScotlandYardModel#0" />
                 <element signature="method#unregisterSpectator#0;class#ScotlandYardModel#0" />
                 <element signature="method#singleTicketLogic#0;class#ScotlandYardModel#0" />
                 <element signature="method#spectatorMove#0;class#ScotlandYardModel#0" />
-                <element signature="method#playerGameMove#0;class#ScotlandYardModel#0" />
-                <element signature="method#playerGameDoubleMove#0;class#ScotlandYardModel#0" />
-                <element signature="e#8069#8070#0" expanded="true" />
-                <element signature="e#8100#8101#0" expanded="true" />
-                <element signature="e#8153#8154#0" expanded="true" />
-                <element signature="e#8190#8191#0" expanded="true" />
+                <element signature="e#10379#10608#0" />
+                <element signature="e#10611#10731#0" />
+                <element signature="e#10734#10876#0" />
+                <element signature="e#10282#10283#0" expanded="true" />
+                <element signature="e#10312#10313#0" expanded="true" />
+                <element signature="e#11102#11103#0" expanded="true" />
+                <element signature="e#11139#11140#0" expanded="true" />
                 <element signature="method#generateMoves#0;class#ScotlandYardModel#0" />
-                <element signature="method#playerTurn#0;class#ScotlandYardModel#0" />
-                <element signature="method#getPlayerLocation#0;class#ScotlandYardModel#0" />
+                <element signature="method#startRotate#0;class#ScotlandYardModel#0" />
+                <element signature="e#14278#14339#1" />
+                <element signature="e#16484#16485#0" expanded="true" />
+                <element signature="method#getPlayers#0;class#ScotlandYardModel#0" />
+                <element signature="method#getWinningPlayers#0;class#ScotlandYardModel#0" />
                 <element signature="method#getPlayerTickets#0;class#ScotlandYardModel#0" />
-                <element signature="method#getCurrentPlayer#0;class#ScotlandYardModel#0" />
-                <element signature="e#14720#14747#1" />
-                <element signature="e#16436#16437#0" expanded="true" />
-                <element signature="e#14794#14845#1" />
-                <element signature="e#16534#16535#0" expanded="true" />
-                <element signature="e#14903#14963#1" />
-                <element signature="e#16652#16653#0" expanded="true" />
+                <element signature="e#19232#20037#0" />
+                <element signature="e#18237#18274#1" />
+                <element signature="e#18980#18981#0" expanded="true" />
+                <element signature="e#18317#18344#1" />
+                <element signature="e#19050#19051#0" expanded="true" />
+                <element signature="e#18391#18442#1" />
+                <element signature="e#19148#19149#0" expanded="true" />
+                <element signature="e#18500#18560#1" />
+                <element signature="e#19266#19267#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardPlayer.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSixPlayerPlayOutTestComplex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-426">
-              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state relative-caret-position="2416">
+              <caret line="716" column="32" selection-start-line="716" selection-start-column="32" selection-end-line="716" selection-end-column="32" />
+              <folding>
+                <element signature="e#26638#26678#0" expanded="true" />
+                <element signature="e#27290#27330#0" expanded="true" />
+                <element signature="e#27867#27907#0" expanded="true" />
+                <element signature="e#28457#28497#0" expanded="true" />
+                <element signature="e#29103#29143#0" expanded="true" />
+                <element signature="e#35855#35895#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -58,17 +81,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelGameOverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-389">
-              <caret line="180" selection-start-line="180" selection-end-line="180" />
+            <state relative-caret-position="355">
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelValidMoveTest.java">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelPlayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-267">
-              <caret line="299" column="54" selection-start-line="299" selection-start-column="54" selection-end-line="299" selection-end-column="54" />
+            <state relative-caret-position="21">
+              <caret line="264" selection-start-line="264" selection-end-line="264" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1007">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Spectator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSpectatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1806">
+              <caret line="334" selection-start-line="334" selection-end-line="334" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -103,11 +162,143 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="bris" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="bris" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="bris" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="scotlandyard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="ac" type="462c0819:PsiDirectoryNode" />
+              <item name="bris" type="462c0819:PsiDirectoryNode" />
+              <item name="cs" type="462c0819:PsiDirectoryNode" />
+              <item name="scotlandyard" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555690707298" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556141223943" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -145,7 +336,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33154362" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -161,7 +351,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.76487255" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.76487255" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -205,11 +395,13 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java</url>
-          <line>230</line>
-          <properties />
-          <option name="timeStamp" value="3" />
+          <line>205</line>
+          <properties class="uk.ac.bris.cs.scotlandyard.model.ScotlandYardModel" method="playerGameMove">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -354,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ParameterisedModelTestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardGameFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -381,9 +566,6 @@
           <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSixPlayerPlayOutTestComplex.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/target/classes/layout/Player.fxml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -417,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-218">
@@ -452,46 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Spectator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/TicketMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/DoubleMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/harness/TestHarness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelPlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="261" column="51" selection-start-line="261" selection-start-column="51" selection-end-line="261" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1397">
-          <caret line="211" column="61" selection-start-line="211" selection-start-column="61" selection-end-line="211" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Move.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -499,55 +634,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/harness/TestHarness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="453" column="13" selection-start-line="453" selection-start-column="13" selection-end-line="453" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ParameterisedModelTestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="81" column="60" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/DoubleMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelValidMoveTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="299" column="54" selection-start-line="299" selection-start-column="54" selection-end-line="299" selection-end-column="54" />
+        <state relative-caret-position="240">
+          <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/TicketMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1007">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSpectatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1806">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelPlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelTwoPlayerPlayOutTestSimple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Spectator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSixPlayerPlayOutTestSimple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="457" column="39" selection-start-line="457" selection-start-column="39" selection-end-line="457" selection-end-column="39" />
+          <folding>
+            <element signature="e#4203#4243#0" expanded="true" />
+            <element signature="e#4856#4896#0" expanded="true" />
+            <element signature="e#5463#5503#0" expanded="true" />
+            <element signature="e#6039#6079#0" expanded="true" />
+            <element signature="e#21600#21640#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelGameOverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-389">
-          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        <state relative-caret-position="355">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSixPlayerPlayOutTestComplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2416">
+          <caret line="716" column="32" selection-start-line="716" selection-start-column="32" selection-end-line="716" selection-end-column="32" />
+          <folding>
+            <element signature="e#26638#26678#0" expanded="true" />
+            <element signature="e#27290#27330#0" expanded="true" />
+            <element signature="e#27867#27907#0" expanded="true" />
+            <element signature="e#28457#28497#0" expanded="true" />
+            <element signature="e#29103#29143#0" expanded="true" />
+            <element signature="e#35855#35895#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="446" column="51" selection-start-line="446" selection-start-column="51" selection-end-line="446" selection-end-column="51" />
+        <state relative-caret-position="38">
+          <caret line="220" column="14" selection-start-line="220" selection-start-column="14" selection-end-line="220" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#registerSpectator#0;class#ScotlandYardModel#0" />
             <element signature="method#unregisterSpectator#0;class#ScotlandYardModel#0" />
             <element signature="method#singleTicketLogic#0;class#ScotlandYardModel#0" />
             <element signature="method#spectatorMove#0;class#ScotlandYardModel#0" />
-            <element signature="method#playerGameMove#0;class#ScotlandYardModel#0" />
-            <element signature="method#playerGameDoubleMove#0;class#ScotlandYardModel#0" />
-            <element signature="e#8069#8070#0" expanded="true" />
-            <element signature="e#8100#8101#0" expanded="true" />
-            <element signature="e#8153#8154#0" expanded="true" />
-            <element signature="e#8190#8191#0" expanded="true" />
+            <element signature="e#10379#10608#0" />
+            <element signature="e#10611#10731#0" />
+            <element signature="e#10734#10876#0" />
+            <element signature="e#10282#10283#0" expanded="true" />
+            <element signature="e#10312#10313#0" expanded="true" />
+            <element signature="e#11102#11103#0" expanded="true" />
+            <element signature="e#11139#11140#0" expanded="true" />
             <element signature="method#generateMoves#0;class#ScotlandYardModel#0" />
-            <element signature="method#playerTurn#0;class#ScotlandYardModel#0" />
-            <element signature="method#getPlayerLocation#0;class#ScotlandYardModel#0" />
+            <element signature="method#startRotate#0;class#ScotlandYardModel#0" />
+            <element signature="e#14278#14339#1" />
+            <element signature="e#16484#16485#0" expanded="true" />
+            <element signature="method#getPlayers#0;class#ScotlandYardModel#0" />
+            <element signature="method#getWinningPlayers#0;class#ScotlandYardModel#0" />
             <element signature="method#getPlayerTickets#0;class#ScotlandYardModel#0" />
-            <element signature="method#getCurrentPlayer#0;class#ScotlandYardModel#0" />
-            <element signature="e#14720#14747#1" />
-            <element signature="e#16436#16437#0" expanded="true" />
-            <element signature="e#14794#14845#1" />
-            <element signature="e#16534#16535#0" expanded="true" />
-            <element signature="e#14903#14963#1" />
-            <element signature="e#16652#16653#0" expanded="true" />
+            <element signature="e#19232#20037#0" />
+            <element signature="e#18237#18274#1" />
+            <element signature="e#18980#18981#0" expanded="true" />
+            <element signature="e#18317#18344#1" />
+            <element signature="e#19050#19051#0" expanded="true" />
+            <element signature="e#18391#18442#1" />
+            <element signature="e#19148#19149#0" expanded="true" />
+            <element signature="e#18500#18560#1" />
+            <element signature="e#19266#19267#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-426">
-          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
         </state>
       </provider>
     </entry>
