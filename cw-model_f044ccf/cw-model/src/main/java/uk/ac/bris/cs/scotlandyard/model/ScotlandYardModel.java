@@ -40,8 +40,6 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 	int mrXLocationActual;
 	int intermediateLocation;
 	boolean mrXWin;
-	boolean gameOver;
-	//HashSet<Move> validMoves;
 
 	public ScotlandYardModel(List<Boolean> rounds, Graph<Integer, Transport> graph,
 							 PlayerConfiguration mrX, PlayerConfiguration firstDetective,
@@ -99,7 +97,6 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 		currentPlayer = players.get(0);
 		mrXLocationActual = 0;
 		mrXLocationDisplayed = 0;
-		//validMoves = null;
 	}
 
 	@Override
@@ -204,22 +201,13 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 	}
 
 	public void playerGameMove(TicketMove move) {
-		/*if(playingPlayer.colour() == BLACK) {
-			roundIncrement();
-		}*/
-		//Ticket usedTicket = move.ticket();
-		//playingPlayer.removeTicket(usedTicket);
 		playingPlayer.location(move.destination());
-		/*if (playingPlayer.colour() != BLACK) {
-			players.get(0).addTicket(usedTicket);
-		} else {
-			mrXLocationActual = playingPlayer.location();
-			mrXLocationDisplayed = getPlayerLocation(BLACK).get();
-		}*/
 		if(playingPlayer.colour() == BLACK) {
 			mrXLocationActual = playingPlayer.location();
 			//test
-			mrXLocationDisplayed = getPlayerLocation(BLACK).get();
+			if (rounds.get(getCurrentRound() - 1) == true) {
+				mrXLocationDisplayed = mrXLocationActual;
+			}
 		}
 	}
 
@@ -233,47 +221,51 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 
 	public void playerGameDoubleMove(DoubleMove move) {
 		roundIncrement();
+		//test
 		playerGameMove(move.firstMove());
-		//playerGameMove(move.secondMove());
 		TicketMove hidden1 = hideDestination(move.firstMove());
-		//playerGameMove(move.firstMove());
+
 		roundIncrement();
-		playerGameMove(move.secondMove());
-		TicketMove hidden2 = hideDestination(move.secondMove());
+		//test
 		//playerGameMove(move.secondMove());
+		TicketMove hidden2 = hideDestination(move.secondMove());
 		DoubleMove hidden = new DoubleMove(playingPlayer.colour(), hidden1, hidden2);
 		roundDecrement();
 		roundDecrement();
+
 		playingPlayer.removeTicket(Ticket.DOUBLE);
 		for(Spectator eg : spectators) {
 			eg.onMoveMade(this, hidden);
 		}
+
+		//test having playerGAmeMove in here
+		//playerGameMove(move.firstMove());
 		ticketSwaps(move.firstMove());
 		roundIncrement();
-		spectateRoundStarted();
 		//playerGameMove(move.firstMove());
-
+		spectateRoundStarted();
 		spectatorMove(hidden1);
+		//playerGameMove(move.secondMove());
 		ticketSwaps(move.secondMove());
 		roundIncrement();
+		playerGameMove(move.secondMove());
 		spectateRoundStarted();
-		//playerGameMove(move.secondMove());
-
 		spectatorMove(hidden2);
-
 	}
 
 	public TicketMove hideDestination(TicketMove move) {
 		TicketMove hiddenDestination;
 		if (playingPlayer.colour() == BLACK) {
 			if(rounds.get(getCurrentRound() - 1) == true) {
-				hiddenDestination = new TicketMove(move.colour(), move.ticket(), mrXLocationActual);
-			}
-			else {
+				//test
+				//hiddenDestination = new TicketMove(move.colour(), move.ticket(), mrXLocationActual);
+				hiddenDestination = move;
+				//mrXLocationDisplayed = mrXLocationActual;
+			} else {
 				hiddenDestination = new TicketMove(move.colour(), move.ticket(), mrXLocationDisplayed);
 			}
-		}
-		else {
+			//hiddenDestination = new TicketMove(move.colour(), move.ticket(), getPlayerLocation(BLACK).get());
+		} else {
 			hiddenDestination = move;
 		}
 		return hiddenDestination;
@@ -282,8 +274,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 	public void roundIncrement() {
 		if(currentRound == NOT_STARTED) {
 			currentRound = 1;
-		}
-		else{
+		} else{
 			currentRound = currentRound + 1;
 		}
 	}
@@ -297,8 +288,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 	public void roundDecrement() {
 		if(currentRound == 1) {
 			currentRound = NOT_STARTED;
-		}
-		else{
+		} else{
 			currentRound = currentRound - 1;
 		}
 	}
@@ -341,8 +331,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 				for(Spectator eg : spectators) {
 					eg.onGameOver(this, getWinningPlayers());
 				}
-			}
-			else {
+			} else {
 				playerTurn();
 			}
 		}
@@ -353,8 +342,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 			for (Spectator eg : spectators) {
 				eg.onRotationComplete(this);
 			}
-		}
-		else {
+		} else {
 			for(Spectator eg : spectators) {
 				eg.onGameOver(this, getWinningPlayers());
 			}
@@ -366,8 +354,7 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 		if (i == players.size() - 1) {
 			playingPlayer = currentPlayer;
 			return false;
-		}
-		else {
+		} else {
 			playingPlayer = currentPlayer;
 			currentPlayer = players.get(i + 1);
 			return true;
@@ -505,10 +492,6 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 			if (currentRound == NOT_STARTED) {
 				return location = Optional.of(0);
 			}
-			//testing commented or not commented out
-			else if (rounds.get(getCurrentRound() - 1) == true) {
-				mrXLocationDisplayed = mrXLocationActual;
-			}
 			return location = Optional.of(mrXLocationDisplayed);
 		} else {
 			for (ScotlandYardPlayer eg : players) {
@@ -546,10 +529,8 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 					mrXWin = false;
 					return true;
 				}
-			}
-			else {
+			} else {
 				if (!(moves.isEmpty())) {
-				//if((eg.hasTickets(Ticket.UNDERGROUND) || eg.hasTickets(Ticket.TAXI) || eg.hasTickets(Ticket.BUS))) {
 					playerMovesLeft = true;
 				}
 				if (eg.location() == mrXLocationActual) {
