@@ -220,14 +220,27 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 	}
 
 	public void playerGameDoubleMove(DoubleMove move) {
-		roundIncrement();
+		//roundIncrement();
 		//test
-		playerGameMove(move.firstMove());
-		TicketMove hidden1 = hideDestination(move.firstMove());
+		//playerGameMove(move.firstMove());
+		/*TicketMove hidden1 = hideDestination(move.firstMove());
+		roundIncrement();
+		TicketMove hidden2 = hideDestination(move.secondMove());
+		DoubleMove hidden = new DoubleMove(playingPlayer.colour(), hidden1, hidden2);
+		roundDecrement();
+		roundDecrement();*/
+
+		//DoubleMove hidden = hideDestinationDoubleMove(move);
 
 		roundIncrement();
-		//test
-		//playerGameMove(move.secondMove());
+		if (rounds.get(getCurrentRound() - 1) != true) {
+			playerGameMove(move.firstMove());
+		}
+		TicketMove hidden1 = hideDestination(move.firstMove());
+		roundIncrement();
+		if (rounds.get(getCurrentRound() - 1) != true) {
+			playerGameMove(move.secondMove());
+		}
 		TicketMove hidden2 = hideDestination(move.secondMove());
 		DoubleMove hidden = new DoubleMove(playingPlayer.colour(), hidden1, hidden2);
 		roundDecrement();
@@ -238,20 +251,39 @@ public class ScotlandYardModel implements ScotlandYardGame, Consumer<Move> {
 			eg.onMoveMade(this, hidden);
 		}
 
-		//test having playerGAmeMove in here
-		//playerGameMove(move.firstMove());
 		ticketSwaps(move.firstMove());
 		roundIncrement();
-		//playerGameMove(move.firstMove());
+		//test
+		if(rounds.get(getCurrentRound() - 1) == true) {
+			playerGameMove(move.firstMove());
+		}
 		spectateRoundStarted();
 		spectatorMove(hidden1);
-		//playerGameMove(move.secondMove());
 		ticketSwaps(move.secondMove());
 		roundIncrement();
-		playerGameMove(move.secondMove());
+		if(rounds.get(getCurrentRound() - 1) == true) {
+			playerGameMove(move.secondMove());
+		}
 		spectateRoundStarted();
 		spectatorMove(hidden2);
 	}
+
+	/*public DoubleMove hideDestinationDoubleMove(DoubleMove move) {
+		roundIncrement();
+		if (rounds.get(getCurrentRound() - 1) == true) {
+			playerGameMove(move.firstMove());
+		}
+		TicketMove hidden1 = hideDestination(move.firstMove());
+		roundIncrement();
+		if (rounds.get(getCurrentRound() - 1) == true) {
+			playerGameMove(move.secondMove());
+		}
+		TicketMove hidden2 = hideDestination(move.secondMove());
+		DoubleMove hidden = new DoubleMove(playingPlayer.colour(), hidden1, hidden2);
+		roundDecrement();
+		roundDecrement();
+		return hidden;
+	}*/
 
 	public TicketMove hideDestination(TicketMove move) {
 		TicketMove hiddenDestination;
