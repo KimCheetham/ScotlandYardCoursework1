@@ -3,6 +3,734 @@
   <component name="ChangeListManager">
     <list default="true" id="d3c3ed14-af7f-4177-a47a-78cb49fa8f8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/.mvn/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-classic/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-core/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-parent/1.2.3/logback-parent-1.2.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-parent/1.2.3/logback-parent-1.2.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/ch/qos/logback/logback-parent/1.2.3/logback-parent-1.2.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark-parent/0.6.0/commonmark-parent-0.6.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark-parent/0.6.0/commonmark-parent-0.6.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark-parent/0.6.0/commonmark-parent-0.6.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/0.6.0/commonmark-0.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/0.6.0/commonmark-0.6.0.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/0.6.0/commonmark-0.6.0.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/0.6.0/commonmark-0.6.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/0.6.0/commonmark-0.6.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/0.6.0/commonmark-0.6.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/commonmark/commonmark/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/base-pom/3.0.98/base-pom-3.0.98.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/base-pom/3.0.98/base-pom-3.0.98.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/base-pom/3.0.98/base-pom-3.0.98.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/base-pom/5.0.13/base-pom-5.0.13.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/base-pom/5.0.13/base-pom-5.0.13.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/base-pom/5.0.13/base-pom-5.0.13.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/central-pom/3.0.98/central-pom-3.0.98.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/central-pom/3.0.98/central-pom-3.0.98.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/central-pom/3.0.98/central-pom-3.0.98.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/central-pom/5.0.13/central-pom-5.0.13.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/central-pom/5.0.13/central-pom-5.0.13.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/atlassian/pom/central-pom/5.0.13/central-pom-5.0.13.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo-parent/4.0.1/kryo-parent-4.0.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo-parent/4.0.1/kryo-parent-4.0.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo-parent/4.0.1/kryo-parent-4.0.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/4.0.1/kryo-4.0.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/kryo/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/minlog/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/esotericsoftware/reflectasm/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.2/jackson-annotations-2.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.2/jackson-annotations-2.9.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.2/jackson-annotations-2.9.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.2/jackson-annotations-2.9.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.2/jackson-annotations-2.9.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.2/jackson-annotations-2.9.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/2.9.2/jackson-databind-2.9.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-base/2.9.2/jackson-base-2.9.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-base/2.9.2/jackson-base-2.9.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-base/2.9.2/jackson-base-2.9.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-bom/2.9.2/jackson-bom-2.9.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-bom/2.9.2/jackson-bom-2.9.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-bom/2.9.2/jackson-bom-2.9.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/jackson/jackson-parent/2.9.1/jackson-parent-2.9.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/oss-parent/30/oss-parent-30.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/oss-parent/30/oss-parent-30.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/fasterxml/oss-parent/30/oss-parent-30.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/code/findbugs/jsr305/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_annotations/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava-parent/26.0-jre/guava-parent-26.0-jre.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava-parent/26.0-jre/guava-parent-26.0-jre.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava-parent/26.0-jre/guava-parent-26.0-jre.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/26.0-jre/guava-26.0-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/26.0-jre/guava-26.0-jre.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/26.0-jre/guava-26.0-jre.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/26.0-jre/guava-26.0-jre.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/26.0-jre/guava-26.0-jre.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/26.0-jre/guava-26.0-jre.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/guava/guava/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/com/google/j2objc/j2objc-annotations/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/de/javakaffee/kryo-serializers/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue-parent/4.7.1/fugue-parent-4.7.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue-parent/4.7.1/fugue-parent-4.7.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue-parent/4.7.1/fugue-parent-4.7.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/4.7.1/fugue-4.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/4.7.1/fugue-4.7.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/4.7.1/fugue-4.7.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/4.7.1/fugue-4.7.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/4.7.1/fugue-4.7.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/4.7.1/fugue-4.7.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/atlassian/fugue/fugue/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/2.9.4/fast-classpath-scanner-2.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/2.9.4/fast-classpath-scanner-2.9.4.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/2.9.4/fast-classpath-scanner-2.9.4.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/2.9.4/fast-classpath-scanner-2.9.4.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/2.9.4/fast-classpath-scanner-2.9.4.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/2.9.4/fast-classpath-scanner-2.9.4.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/io/github/lukehutch/fast-classpath-scanner/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-all/1.1/javax.websocket-all-1.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-all/1.1/javax.websocket-all-1.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-all/1.1/javax.websocket-all-1.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/javax/websocket/javax.websocket-api/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/java/jvnet-parent/3/jvnet-parent-3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/java/jvnet-parent/3/jvnet-parent-3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/java/jvnet-parent/3/jvnet-parent-3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/java/jvnet-parent/5/jvnet-parent-5.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/java/jvnet-parent/5/jvnet-parent-5.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/java/jvnet-parent/5/jvnet-parent-5.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx-parent/0.2.0/gesturefx-parent-0.2.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx-parent/0.2.0/gesturefx-parent-0.2.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx-parent/0.2.0/gesturefx-parent-0.2.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/0.2.0/gesturefx-0.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/0.2.0/gesturefx-0.2.0.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/0.2.0/gesturefx-0.2.0.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/0.2.0/gesturefx-0.2.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/0.2.0/gesturefx-0.2.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/0.2.0/gesturefx-0.2.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/net/kurobako/gesturefx/gesturefx/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/checkerframework/checker-qual/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-annotations/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/controlsfx/controlsfx/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/1.0.3/easybind-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/1.0.3/easybind-1.0.3.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/1.0.3/easybind-1.0.3.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/1.0.3/easybind-1.0.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/1.0.3/easybind-1.0.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/1.0.3/easybind-1.0.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/fxmisc/easybind/easybind/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-bom/2.3.25/grizzly-bom-2.3.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-bom/2.3.25/grizzly-bom-2.3.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-bom/2.3.25/grizzly-bom-2.3.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-http/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-project/2.3.25/grizzly-project-2.3.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-project/2.3.25/grizzly-project-2.3.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/grizzly/grizzly-project/2.3.25/grizzly-project-2.3.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-bundles/1.13.1/tyrus-bundles-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-bundles/1.13.1/tyrus-bundles-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-bundles/1.13.1/tyrus-bundles-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.13.1/tyrus-standalone-client-jdk-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.13.1/tyrus-standalone-client-jdk-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.13.1/tyrus-standalone-client-jdk-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.13.1/tyrus-standalone-client-jdk-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.13.1/tyrus-standalone-client-jdk-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/1.13.1/tyrus-standalone-client-jdk-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/bundles/tyrus-standalone-client-jdk/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/1.13.1/tyrus-extension-deflate-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/1.13.1/tyrus-extension-deflate-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/1.13.1/tyrus-extension-deflate-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/1.13.1/tyrus-extension-deflate-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/1.13.1/tyrus-extension-deflate-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/1.13.1/tyrus-extension-deflate-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extension-deflate/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extensions-project/1.13.1/tyrus-extensions-project-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extensions-project/1.13.1/tyrus-extensions-project-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/ext/tyrus-extensions-project/1.13.1/tyrus-extensions-project-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-client/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-client/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/1.13.1/tyrus-container-grizzly-server-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-container-grizzly-server/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-containers-project/1.13.1/tyrus-containers-project-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-containers-project/1.13.1/tyrus-containers-project-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-containers-project/1.13.1/tyrus-containers-project-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-core/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-project/1.13.1/tyrus-project-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-project/1.13.1/tyrus-project-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-project/1.13.1/tyrus-project-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/1.13.1/tyrus-server-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-server/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/glassfish/tyrus/tyrus-spi/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/objenesis/objenesis/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2-linux.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2-linux.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/11.0.2/javafx-base-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-base/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2-linux.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2-linux.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/11.0.2/javafx-controls-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-controls/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2-linux.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2-linux.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/11.0.2/javafx-fxml-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-fxml/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2-linux.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2-linux.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/11.0.2/javafx-graphics-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-graphics/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2-linux.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2-linux.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/11.0.2/javafx-media-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-media/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2-linux.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2-linux.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2-linux.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/11.0.2/javafx-web-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx-web/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx/11.0.2/javafx-11.0.2.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx/11.0.2/javafx-11.0.2.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/openjfx/javafx/11.0.2/javafx-11.0.2.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm-parent/5.0.4/asm-parent-5.0.4.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm-parent/5.0.4/asm-parent-5.0.4.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm-parent/5.0.4/asm-parent-5.0.4.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/asm/asm/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/ow2/1.3/ow2-1.3.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/ow2/1.3/ow2-1.3.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/ow2/ow2/1.3/ow2-1.3.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-api/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/sonatype/oss/oss-parent/7/oss-parent-7.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/sonatype/oss/oss-parent/7/oss-parent-7.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/sonatype/oss/oss-parent/7/oss-parent-7.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/sonatype/oss/oss-parent/9/oss-parent-9.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/sonatype/oss/oss-parent/9/oss-parent-9.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/org/sonatype/oss/oss-parent/9/oss-parent-9.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/cw-ai/0.0.1-SNAPSHOT/cw-ai-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/cw-ai/0.0.1-SNAPSHOT/cw-ai-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/cw-ai/0.0.1-SNAPSHOT/cw-ai-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/cw/0.0.1-SNAPSHOT/cw-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/cw/0.0.1-SNAPSHOT/cw-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/cw/0.0.1-SNAPSHOT/cw-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/0.0.1-SNAPSHOT/fxkit-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/0.0.1-SNAPSHOT/fxkit-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/0.0.1-SNAPSHOT/fxkit-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/0.0.1-SNAPSHOT/fxkit-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/0.0.1-SNAPSHOT/fxkit-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/0.0.1-SNAPSHOT/fxkit-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/fxkit/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/0.0.1-SNAPSHOT/gamekit-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/0.0.1-SNAPSHOT/gamekit-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/0.0.1-SNAPSHOT/gamekit-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/0.0.1-SNAPSHOT/gamekit-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/0.0.1-SNAPSHOT/gamekit-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/0.0.1-SNAPSHOT/gamekit-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/gamekit/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/panda2/0.0.1-SNAPSHOT/panda2-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/panda2/0.0.1-SNAPSHOT/panda2-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/panda2/0.0.1-SNAPSHOT/panda2-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/0.0.1-SNAPSHOT/scotlandyard-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/0.0.1-SNAPSHOT/scotlandyard-api-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/0.0.1-SNAPSHOT/scotlandyard-api-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/0.0.1-SNAPSHOT/scotlandyard-api-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/0.0.1-SNAPSHOT/scotlandyard-api-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/0.0.1-SNAPSHOT/scotlandyard-api-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-api/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/0.0.1-SNAPSHOT/scotlandyard-local-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/0.0.1-SNAPSHOT/scotlandyard-local-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/0.0.1-SNAPSHOT/scotlandyard-local-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/0.0.1-SNAPSHOT/scotlandyard-local-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/0.0.1-SNAPSHOT/scotlandyard-local-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/0.0.1-SNAPSHOT/scotlandyard-local-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-local/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/0.0.1-SNAPSHOT/scotlandyard-model-fn-ri-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/0.0.1-SNAPSHOT/scotlandyard-model-fn-ri-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/0.0.1-SNAPSHOT/scotlandyard-model-fn-ri-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/0.0.1-SNAPSHOT/scotlandyard-model-fn-ri-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/0.0.1-SNAPSHOT/scotlandyard-model-fn-ri-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/0.0.1-SNAPSHOT/scotlandyard-model-fn-ri-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-model-fn-ri/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/0.0.1-SNAPSHOT/scotlandyard-websocket-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/0.0.1-SNAPSHOT/scotlandyard-websocket-api-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/0.0.1-SNAPSHOT/scotlandyard-websocket-api-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/0.0.1-SNAPSHOT/scotlandyard-websocket-api-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/0.0.1-SNAPSHOT/scotlandyard-websocket-api-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/0.0.1-SNAPSHOT/scotlandyard-websocket-api-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard-websocket-api/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard/0.0.1-SNAPSHOT/scotlandyard-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard/0.0.1-SNAPSHOT/scotlandyard-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/scotlandyard/0.0.1-SNAPSHOT/scotlandyard-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/0.0.1-SNAPSHOT/wskit-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/0.0.1-SNAPSHOT/wskit-0.0.1-SNAPSHOT.jar.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/0.0.1-SNAPSHOT/wskit-0.0.1-SNAPSHOT.jar.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/0.0.1-SNAPSHOT/wskit-0.0.1-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/0.0.1-SNAPSHOT/wskit-0.0.1-SNAPSHOT.pom.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/0.0.1-SNAPSHOT/wskit-0.0.1-SNAPSHOT.pom.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/maven-metadata-central.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/maven-metadata-central.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/maven-metadata-central.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/maven-metadata.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/maven-metadata.xml.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/repo/uk/ac/bris/cs/wskit/maven-metadata.xml.sha1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,54 +741,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="263" column="46" selection-start-line="263" selection-start-column="46" selection-end-line="263" selection-end-column="46" />
+            <state relative-caret-position="27">
+              <caret line="212" column="25" selection-start-line="212" selection-start-column="25" selection-end-line="212" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ScotlandYardModel#0;class#ScotlandYardModel#0" />
                 <element signature="method#registerSpectator#0;class#ScotlandYardModel#0" />
                 <element signature="method#unregisterSpectator#0;class#ScotlandYardModel#0" />
+                <element signature="e#5337#6585#0" />
+                <element signature="e#6529#7511#0" />
                 <element signature="method#spectatorMove#0;class#ScotlandYardModel#0" />
+                <element signature="method#playerGameMove#0;class#ScotlandYardModel#0" />
                 <element signature="method#ticketSwaps#0;class#ScotlandYardModel#0" />
-                <element signature="e#11481#11482#0" expanded="true" />
-                <element signature="e#11511#11512#0" expanded="true" />
-                <element signature="e#11893#11894#0" expanded="true" />
-                <element signature="e#11930#11931#0" expanded="true" />
+                <element signature="method#roundIncrement#0;class#ScotlandYardModel#0" />
+                <element signature="method#spectateRoundStarted#0;class#ScotlandYardModel#0" />
+                <element signature="method#roundDecrement#0;class#ScotlandYardModel#0" />
+                <element signature="method#accept#0;class#ScotlandYardModel#0" />
+                <element signature="e#11245#11246#0" expanded="true" />
+                <element signature="e#11282#11283#0" expanded="true" />
                 <element signature="method#endOfRound#0;class#ScotlandYardModel#0" />
                 <element signature="method#nextPlayer#0;class#ScotlandYardModel#0" />
-                <element signature="method#generateMoves#0;class#ScotlandYardModel#0" />
+                <element signature="e#12633#18740#0" />
                 <element signature="method#playerTurn#0;class#ScotlandYardModel#0" />
                 <element signature="method#startRotate#0;class#ScotlandYardModel#0" />
-                <element signature="e#17268#17269#0" expanded="true" />
-                <element signature="e#17328#17329#0" expanded="true" />
+                <element signature="method#getSpectators#0;class#ScotlandYardModel#0" />
                 <element signature="method#getPlayers#0;class#ScotlandYardModel#0" />
                 <element signature="method#getWinningPlayers#0;class#ScotlandYardModel#0" />
-                <element signature="method#getPlayerTickets#0;class#ScotlandYardModel#0" />
+                <element signature="e#18391#18944#0" />
+                <element signature="e#18947#19468#0" />
                 <element signature="method#isGameOver#0;class#ScotlandYardModel#0" />
-                <element signature="e#19526#19527#0" expanded="true" />
-                <element signature="e#19562#19563#0" expanded="true" />
-                <element signature="e#19606#19607#0" expanded="true" />
-                <element signature="e#19632#19633#0" expanded="true" />
-                <element signature="e#19680#19681#0" expanded="true" />
-                <element signature="e#19730#19731#0" expanded="true" />
-                <element signature="e#19789#19790#0" expanded="true" />
-                <element signature="e#19848#19849#0" expanded="true" />
+                <element signature="method#getCurrentPlayer#0;class#ScotlandYardModel#0" />
+                <element signature="method#getCurrentRound#0;class#ScotlandYardModel#0" />
+                <element signature="method#getRounds#0;class#ScotlandYardModel#0" />
+                <element signature="method#getGraph#0;class#ScotlandYardModel#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="485">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="35" column="103" selection-start-line="35" selection-start-column="103" selection-end-line="35" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/DoubleMove.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/TicketMove.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Move.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -68,14 +851,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSixPlayerPlayOutTestComplex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="317" column="81" selection-start-line="317" selection-start-column="81" selection-end-line="317" selection-end-column="81" />
+            <state relative-caret-position="487">
+              <caret line="1354" selection-start-line="1354" selection-end-line="1354" />
               <folding>
                 <element signature="e#5655#5695#0" expanded="true" />
                 <element signature="e#6232#6272#0" expanded="true" />
                 <element signature="e#6827#6867#0" expanded="true" />
                 <element signature="e#7404#7444#0" expanded="true" />
                 <element signature="e#14733#14773#0" expanded="true" />
+                <element signature="e#15398#15438#0" expanded="true" />
                 <element signature="e#16012#16052#0" expanded="true" />
                 <element signature="e#26638#26678#0" expanded="true" />
                 <element signature="e#27290#27330#0" expanded="true" />
@@ -88,6 +872,8 @@
                 <element signature="e#37043#37083#0" expanded="true" />
                 <element signature="e#37638#37678#0" expanded="true" />
                 <element signature="e#38216#38256#0" expanded="true" />
+                <element signature="e#64732#64772#0" expanded="true" />
+                <element signature="e#114693#114733#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +882,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSpectatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="222" column="71" lean-forward="true" selection-start-line="222" selection-start-column="71" selection-end-line="222" selection-end-column="71" />
+            <state relative-caret-position="366">
+              <caret line="334" selection-start-line="334" selection-end-line="334" />
             </state>
           </provider>
         </entry>
@@ -113,6 +899,7 @@
         <option value="$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelCreationTest.java" />
         <option value="$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java" />
         <option value="$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java" />
+        <option value="$PROJECT_DIR$/cw-model_f044ccf/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java" />
       </list>
     </option>
   </component>
@@ -145,17 +932,25 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -163,6 +958,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -171,6 +967,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -180,6 +977,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -190,6 +988,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -201,6 +1000,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -213,6 +1013,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -226,6 +1027,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -240,6 +1042,7 @@
             <path>
               <item name="javacoursework" type="b2602c69:ProjectViewProjectNode" />
               <item name="javacoursework" type="462c0819:PsiDirectoryNode" />
+              <item name="cw-model_f044ccf" type="462c0819:PsiDirectoryNode" />
               <item name="cw-ai" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -259,8 +1062,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556627818473" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556810509413" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kimch\repos\javacoursework\cw-model_f044ccf" />
+      <recent name="C:\Users\kimch\repos\javacoursework\cw-model_f044ccf\cw-model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -300,7 +1109,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33154362" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3409396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -360,15 +1169,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java</url>
-          <line>202</line>
+          <line>189</line>
           <properties class="uk.ac.bris.cs.scotlandyard.model.ScotlandYardModel" method="playerGameMove">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java</url>
+          <line>281</line>
+          <properties class="uk.ac.bris.cs.scotlandyard.model.ScotlandYardModel" method="accept">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java</url>
-          <line>329</line>
+          <line>283</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -434,16 +1251,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/target/test-classes/uk/ac/bris/cs/scotlandyard/model/ParameterisedModelTestBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#2764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/target/test-classes/uk/ac/bris/cs/scotlandyard/model/ParameterisedModelTestBase.class" />
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/target/classes/uk/ac/bris/cs/scotlandyard/model/ScotlandYardView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -537,8 +1345,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/target/classes/layout/Player.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/harness/ImmutableScotlandYardView.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,20 +1397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/harness/TestHarness.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -617,24 +1411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/DoubleMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelValidMoveTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/TicketMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -656,13 +1436,6 @@
             <element signature="e#6039#6079#0" expanded="true" />
             <element signature="e#21600#21640#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -694,33 +1467,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java">
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/ai/AI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="114" column="52" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+        <state relative-caret-position="170">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java">
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java" />
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/target/classes/uk/ac/bris/cs/scotlandyard/model/MoveVisitor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state>
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#326#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/DoubleMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSpectatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSixPlayerPlayOutTestComplex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="317" column="81" selection-start-line="317" selection-start-column="81" selection-end-line="317" selection-end-column="81" />
+        <state relative-caret-position="487">
+          <caret line="1354" selection-start-line="1354" selection-end-line="1354" />
           <folding>
             <element signature="e#5655#5695#0" expanded="true" />
             <element signature="e#6232#6272#0" expanded="true" />
             <element signature="e#6827#6867#0" expanded="true" />
             <element signature="e#7404#7444#0" expanded="true" />
             <element signature="e#14733#14773#0" expanded="true" />
+            <element signature="e#15398#15438#0" expanded="true" />
             <element signature="e#16012#16052#0" expanded="true" />
             <element signature="e#26638#26678#0" expanded="true" />
             <element signature="e#27290#27330#0" expanded="true" />
@@ -733,51 +1542,71 @@
             <element signature="e#37043#37083#0" expanded="true" />
             <element signature="e#37638#37678#0" expanded="true" />
             <element signature="e#38216#38256#0" expanded="true" />
+            <element signature="e#64732#64772#0" expanded="true" />
+            <element signature="e#114693#114733#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelSpectatorTest.java">
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/TicketMove.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="222" column="71" lean-forward="true" selection-start-line="222" selection-start-column="71" selection-end-line="222" selection-end-column="71" />
+        <state relative-caret-position="119">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/test/java/uk/ac/bris/cs/scotlandyard/model/ModelRoundTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-model/src/main/java/uk/ac/bris/cs/scotlandyard/model/ScotlandYardModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="263" column="46" selection-start-line="263" selection-start-column="46" selection-end-line="263" selection-end-column="46" />
+        <state relative-caret-position="27">
+          <caret line="212" column="25" selection-start-line="212" selection-start-column="25" selection-end-line="212" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#ScotlandYardModel#0;class#ScotlandYardModel#0" />
             <element signature="method#registerSpectator#0;class#ScotlandYardModel#0" />
             <element signature="method#unregisterSpectator#0;class#ScotlandYardModel#0" />
+            <element signature="e#5337#6585#0" />
+            <element signature="e#6529#7511#0" />
             <element signature="method#spectatorMove#0;class#ScotlandYardModel#0" />
+            <element signature="method#playerGameMove#0;class#ScotlandYardModel#0" />
             <element signature="method#ticketSwaps#0;class#ScotlandYardModel#0" />
-            <element signature="e#11481#11482#0" expanded="true" />
-            <element signature="e#11511#11512#0" expanded="true" />
-            <element signature="e#11893#11894#0" expanded="true" />
-            <element signature="e#11930#11931#0" expanded="true" />
+            <element signature="method#roundIncrement#0;class#ScotlandYardModel#0" />
+            <element signature="method#spectateRoundStarted#0;class#ScotlandYardModel#0" />
+            <element signature="method#roundDecrement#0;class#ScotlandYardModel#0" />
+            <element signature="method#accept#0;class#ScotlandYardModel#0" />
+            <element signature="e#11245#11246#0" expanded="true" />
+            <element signature="e#11282#11283#0" expanded="true" />
             <element signature="method#endOfRound#0;class#ScotlandYardModel#0" />
             <element signature="method#nextPlayer#0;class#ScotlandYardModel#0" />
-            <element signature="method#generateMoves#0;class#ScotlandYardModel#0" />
+            <element signature="e#12633#18740#0" />
             <element signature="method#playerTurn#0;class#ScotlandYardModel#0" />
             <element signature="method#startRotate#0;class#ScotlandYardModel#0" />
-            <element signature="e#17268#17269#0" expanded="true" />
-            <element signature="e#17328#17329#0" expanded="true" />
+            <element signature="method#getSpectators#0;class#ScotlandYardModel#0" />
             <element signature="method#getPlayers#0;class#ScotlandYardModel#0" />
             <element signature="method#getWinningPlayers#0;class#ScotlandYardModel#0" />
-            <element signature="method#getPlayerTickets#0;class#ScotlandYardModel#0" />
+            <element signature="e#18391#18944#0" />
+            <element signature="e#18947#19468#0" />
             <element signature="method#isGameOver#0;class#ScotlandYardModel#0" />
-            <element signature="e#19526#19527#0" expanded="true" />
-            <element signature="e#19562#19563#0" expanded="true" />
-            <element signature="e#19606#19607#0" expanded="true" />
-            <element signature="e#19632#19633#0" expanded="true" />
-            <element signature="e#19680#19681#0" expanded="true" />
-            <element signature="e#19730#19731#0" expanded="true" />
-            <element signature="e#19789#19790#0" expanded="true" />
-            <element signature="e#19848#19849#0" expanded="true" />
+            <element signature="method#getCurrentPlayer#0;class#ScotlandYardModel#0" />
+            <element signature="method#getCurrentRound#0;class#ScotlandYardModel#0" />
+            <element signature="method#getRounds#0;class#ScotlandYardModel#0" />
+            <element signature="method#getGraph#0;class#ScotlandYardModel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cw-model_f044ccf/cw-ai/src/main/java/uk/ac/bris/cs/scotlandyard/ui/ai/MyAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="35" column="103" selection-start-line="35" selection-start-column="103" selection-end-line="35" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
